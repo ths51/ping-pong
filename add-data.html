@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="5">
+    <!-- <meta http-equiv="refresh" content="5"> -->
     <link rel="stylesheet" href="index.css">
 
     <!-- FONT DATA -->
@@ -21,41 +21,41 @@
 </nav>
 <body>
     <h1>Add New Game Data</h1>
-    <form>
-        <fieldset>
+    <form id="game_data">
+        <fieldset id="date">
             <p>Date:</p><input type="date" style="width: 125px;">
         </fieldset>
         <fieldset>
             <p>Server 1</p>
-            <select>
+            <select id="server1">
                 <option>{ SELECT PLAYER }</option>
                 <option>Logan</option>
                 <option>Nathan</option>
                 <option>Ethan</option>
             </select>
             <p>Score:</p>
-            <input type="number">
+            <input type="number" id="s1_score">
         </fieldset>
 
         <fieldset>
             <p>Server 2</p>
-            <select>
+            <select id="server2">
                 <option>{ SELECT PLAYER }</option>
                 <option>Logan</option>
                 <option>Nathan</option>
                 <option>Ethan</option>
             </select>
             <p>Score:</p>
-            <input type="number">
+            <input type="number" id="s2_score">
         </fieldset>
         
         <fieldset>
             <p>6-9?</p>
-            <input type="checkbox">
+            <input type="checkbox" id="six-nine">
         </fieldset>
 
         <fieldset>
-            <input type="submit" style="margin: 5px 15px;">
+            <input type="submit" onsubmit="add_data()" style="margin: 5px 15px;">
         </fieldset>
         
     </form>
