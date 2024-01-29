@@ -1,4 +1,4 @@
-// import fs from 'fs';
+// import fs from 'fs'
 
 // reader = new FileReader()
 // file = fs.readFile('Ping Pong Stats.xlsx')
@@ -11,6 +11,9 @@ function add_data() {
     return 0
 }
 
+
 add_data()
+
+document.getElementById('submit_data').addEventListener('click', add_data, false)
 
 // console.log(reader)
